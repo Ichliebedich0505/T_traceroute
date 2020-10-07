@@ -7,7 +7,7 @@
 *.iml
 out
 gen
-./T_traceroute
+T_traceroute
 ### Example user template template
 ### Example user template
 

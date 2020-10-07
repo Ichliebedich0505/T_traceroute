@@ -1,0 +1,12 @@
+obj="NameItWhatYouLike"
+
+Basic Usage:
+    go build -o $obj
+    ./$obj dst_site
+
+Help:
+    ./$obj --help
+
+Note:
+    Destination site must be placed as the last argument.
+    要Trace的目标地址必须放在最后面作为最后一个参数。
