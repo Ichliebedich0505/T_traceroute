@@ -85,9 +85,10 @@ func Tracesite(ctx *context) error {
 			fromAddrStr := fmt.Sprintf("%v.%v.%v.%v",
 				ip[0], ip[1], ip[2], ip[3])
 			// 这边符合一个即可退出
+			breakable := false
 			if addrs[fromAddrStr]{
 				fmt.Println("addrs[fromAddrStr]这边退出")
-				break
+				breakable = true
 			}
 			if first {
 				fmt.Printf("%v. %v // %v\n", ttl,
@@ -95,6 +96,9 @@ func Tracesite(ctx *context) error {
 			}else {
 				fmt.Printf("%v // %v\n",
 					fromAddrStr, elapseTime)
+			}
+			if breakable {
+				break
 			}
 			first = true
 			ttl ++

@@ -24,7 +24,7 @@ type trace_cli struct {
 	Usage string
 	UsageHelp string
 }
-const DEFAULT_PORT = 8080
+const DEFAULT_PORT = 34456
 const DEFAULT_PACKET_SIZE = 64
 const DEFAULT_ADDR = "www.baidu.com"
 const DEFAULT_RETRIES = 3
